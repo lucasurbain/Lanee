@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--=============== META ===============-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!--=============== ICON ===============-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+    <link rel="manifest" href="assets/img/logo/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/logo/favicon/safari-pinned-tab.svg" color="#00c7ff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!--=============== For Safari ===============-->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Lanee">
+    <meta name="og:description" content="Application de parcours sportifs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--=============== LINK CSS ===============-->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sideBar.css">
+    <link rel="stylesheet" href="assets/css/map_styles.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!--=============== MAPBOX ===============-->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+
+    <!--=============== REMIXICONS & BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== FONT ===============-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--=============== CSS Styles ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Carte - Lanee</title>
+
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <a href="index.html" class="logo">Lane<span>e</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="header__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="header__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="carte.html" class="header__link">Map</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="members.html" class="header__link">Équipe</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="conseils.html" class="header__link">Nos conseils</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="header__link">À propos</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <p>Lane</p><span>e</span></a>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Carte</h3>
+
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Accueil</span>
+                        </a>
+
+                        <div class="nav__dropdown">
+                            <a href="carte.html" class="nav__link active">
+                                <i class='bx bx-compass nav__icon'></i>
+                                <span class="nav__name">Map</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Support</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Équipe</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="members.html" class="nav__dropdown-item">Lucas</a>
+                                    <a href="members.html" class="nav__dropdown-item">Pierre-Yves</a>
+                                    <a href="members.html" class="nav__dropdown-item">Achraf</a>
+                                    <a href="members.html" class="nav__dropdown-item">Valentin</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="conseils.html" class="nav__link">
+                            <i class='bx bx-bell nav__icon'></i>
+                            <span class="nav__name">Nos conseils</span>
+                        </a>
+                        <a href="about.html" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon'></i>
+                            <span class="nav__name">À propos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-cog nav__icon'></i>
+                <span class="nav__name">Paramètres</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--==================== MAPBOX SECTION ====================-->
+    <div class="mapbox__container">
+        <div id="map"></div>
+    </div>
+
+
+
+
+    <div class="data__50__width">
+        <!--==================== DATA SECTION ====================-->
+        <div class="data__container">
+            <div class="data__box">
+                <p><b>D+</b> : 715m</p>
+                <p><b>Durée</b> : 3:16:32</p>
+                <p><b>Distance Totale</b> : 88,4km</p>
+                <p><b>Vitesse Moyenne</b> : 27.0km/h</p>
+            </div>
+        </div>
+        <!--==================== LINE CHART SECTION ====================-->
+        <div class="chartCard">
+            <div class="chartBox">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Lanee</h3>
+                    <p class="footer__description">Lanee est une offre <br> gratuite, à destinations <br> de tous les sportifs.
+                    </p>
+                    <div>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-discord'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">À propos</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Lanee?</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Fonctionnalités</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">En Savoir Plus</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Compagnie</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="members.html" class="footer__link">Équipe</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Notre Masterplan</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Plus de Conseils</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Nous Contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightText">
+            <h4 class="copyright">
+                <div id="versionID"></div>
+            </h4>
+        </div>
+    </footer>
+
+    <!--=============== CHARTJS SCRIPT ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicHQzIiwiYSI6ImNrdXF6dWFjcjA5NXAyb28ydWhvMHB5YmsifQ.oTTAYxq3dhVZGvi_b0s1Rg';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/pt3/ckus6gusy510d17pjwibllnrs',
+            center: [6.488550, 48.106165],
+            zoom: 9.80,
+
+        });
+
+        //Ajout des bouttons de navigation + et - 
+        const nav = new mapboxgl.NavigationControl({
+            visualizePitch: true
+        });
+
+        map.addControl(new mapboxgl.NavigationControl());
+
+        // Set an event listener that fires
+        // just before a zoom transition starts.
+
+        map.on('load', () => {
+            map.addSource('places', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'FeatureCollection',
+                    'features': [{
+                        'type': 'Feature',
+                        'properties': {
+                            'description': '<strong>Départ</strong>'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [6.394067526559496, 48.17373105223302]
+                        }
+                    }, {
+                        'type': 'Feature',
+                        'properties': {
+                            'description': '<strong>Arrivée</strong>'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [6.413816, 48.176208]
+                        }
+                    }, ]
+                }
+            });
+            // Add a layer showing the places.
+            map.addLayer({
+                'id': 'places',
+                'type': 'circle',
+                'source': 'places',
+                'paint': {
+                    'circle-color': 'red',
+                    'circle-radius': 4,
+                }
+            });
+
+            // Create a popup, but don't add it to the map yet.
+            const popup = new mapboxgl.Popup({
+                closeButton: false,
+                closeOnClick: false
+            });
+
+            map.on('mouseenter', 'places', (e) => {
+                // Change the cursor style as a UI indicator.
+                map.getCanvas().style.cursor = 'pointer';
+
+                // Copy coordinates array.
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const description = e.features[0].properties.description;
+
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                // Populate the popup and set its coordinates
+                // based on the feature found.
+                popup.setLngLat(coordinates).setHTML(description).addTo(map);
+            });
+
+            map.on('mouseleave', 'places', () => {
+                map.getCanvas().style.cursor = '';
+                popup.remove();
+            });
+
+
+
+        });
+    </script>
+
+    <script>
+        // setup 
+        const data = {
+            labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '88.4'],
+            datasets: [{
+                label: 'Courbe Altimétique',
+                data: [399, 383, 408, 439, 457, 470, 464, 444, 437, 450, 458, 431, 436, 440, 422, 411, 413, 403, 396, 382, 355, 342, 345, 339, 333, 332, 338, 343, 351, 351, 349, 344, 342, 354, 356, 358, 366, 365, 365, 366, 368, 382, 397, 450, 529, 575, 602, 617, 573, 494, 426, 418, 420, 412, 394, 386, 391, 389, 386, 387, 410, 453, 507, 537, 518, 481, 442, 420, 406, 405, 402, 399, 386, 375, 373, 363, 356, 354, 356, 353, 349, 347, 342, 344, 339, 342, 358, 381, 384, 395, ],
+                backgroundColor: [
+                    'rgba(255, 0, 0, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 0, 0, 1)'
+                ],
+                tension: 0.6
+            }]
+        };
+
+        // config 
+        const config = {
+            type: 'line',
+            data,
+            options: {
+
+                legend: {
+                    display: true,
+                    onHover: function(e) {
+                        e.target.style.cursor = 'pointer'
+                    },
+                    onLeave: function(e) {
+                        e.target.style.cursor = 'default'
+                    }
+                },
+
+
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'distance (en km)'
+                        },
+                    },
+
+                    y: {
+                        min: 330,
+                        max: 650,
+
+                        ticks: {
+                            beginAtZero: true,
+                            stepSize: 10,
+                        },
+                        title: {
+                            display: true,
+                            text: 'altitude (en m)'
+                        }
+                    },
+                },
+                elements: {
+                    point: {
+                        radius: 0
+                    },
+                    line: {
+                        fill: true
+                    }
+                },
+            }
+
+        };
+
+        // render init block
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/versions.js"></script>
+
+    <!--=============== ICON ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!--=============== JS TRANSITION ===============-->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

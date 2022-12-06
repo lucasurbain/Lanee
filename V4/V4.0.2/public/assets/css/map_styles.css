@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 100vh;
+}
+
+.data__50__width {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.data__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.data__container p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.chartCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 70px;
+    width: 100%;
+}
+
+.chartBox {
+    width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+}
+
+#map {
+    top: 0;
+    bottom: 0;
+    height: 50vh;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.mapbox__container {
+    padding: 30px;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    .data__50__width {
+        height: 500px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .chartBox {
+        width: calc(100% - 20px);
+        padding: 0px;
+    }
+    .chartCard {
+        height: 300px;
+    }
+}

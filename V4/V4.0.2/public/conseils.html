@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--=============== META ===============-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!--=============== ICON ===============-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+    <link rel="manifest" href="assets/img/logo/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/logo/favicon/safari-pinned-tab.svg" color="#00c7ff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!--=============== For Safari ===============-->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Lanee">
+    <meta name="og:description" content="Application de parcours sportifs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--=============== LINK CSS ===============-->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sideBar.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/steps.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--=============== REMIXICONS & BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== FONT ===============-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Conseils - Lanee</title>
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <a href="index.html" class="logo">Lane<span>e</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="header__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="header__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="carte.html" class="header__link">Map</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="members.html" class="header__link">Équipe</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="conseils.html" class="header__link">Nos conseils</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="header__link">À propos</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <p>Lane</p><span>e</span></a>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Carte</h3>
+
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Accueil</span>
+                        </a>
+
+                        <div class="nav__dropdown">
+                            <a href="carte.html" class="nav__link">
+                                <i class='bx bx-compass nav__icon'></i>
+                                <span class="nav__name">Map</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Support</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Équipe</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="members.html" class="nav__dropdown-item">Lucas</a>
+                                    <a href="members.html" class="nav__dropdown-item">Pierre-Yves</a>
+                                    <a href="members.html" class="nav__dropdown-item">Achraf</a>
+                                    <a href="members.html" class="nav__dropdown-item">Valentin</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="conseils.html" class="nav__link active">
+                            <i class='bx bx-bell nav__icon'></i>
+                            <span class="nav__name">Nos conseils</span>
+                        </a>
+                        <a href="about.html" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon'></i>
+                            <span class="nav__name">À propos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-cog nav__icon'></i>
+                <span class="nav__name">Paramètres</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--==================== BANNER 6 ====================-->
+    <section class="banner6" id="banner6">
+        <div class="content" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Nos conseils</h2>
+        </div>
+    </section>
+
+    <!--==================== Experience Numbers ====================-->
+    <section class="experience section">
+        <h2 class="section__title" data-aos="fade-up" data-aos-duration="1200">La demande <br> en quelques chiffres</h2>
+
+        <div class="experience__container container grid" data-aos="fade-up" data-aos-duration="1500">
+            <div class="experience__content grid">
+                <div class="experience__data">
+                    <h2 class="experience__number">+13 Millions</h2>
+                    <span class="experience__description">De coureurs régulier<br> en France</span>
+                </div>
+
+                <div class="experience__data">
+                    <h2 class="experience__number">64%</h2>
+                    <span class="experience__description">Des Français pratiquent au moins<br> un sport par semaine</span>
+                </div>
+
+                <div class="experience__data">
+                    <h2 class="experience__number">100 Millions+</h2>
+                    <span class="experience__description">D'Apple Watch <br> dans le Monde</span>
+                </div>
+            </div>
+
+            <div class="experience__img grid">
+                <div class="experience__overlay">
+                    <img src="assets/img/banners/mountain.jpg" alt="" class="experience__img-one">
+                </div>
+
+                <div class="experience__overlay">
+                    <img src="assets/img/banners/bike-mountains.jpg" alt="" class="experience__img-two">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== STEPS ====================-->
+    <section class="steps section container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="steps__bg">
+            <h2 class="section__title-center steps__title">
+                Étapes pour progresser<br> plus rapidement
+            </h2>
+
+            <div class="steps__container grid">
+                <div class="steps__card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="steps__card-number">01</div>
+                    <h3 class="steps__card-title">Entraînement</h3>
+                    <p class="steps__card-description">
+                        L'entraînement sportif est une étape importante dans la progression d'un sportif.
+                    </p>
+                </div>
+
+                <div class="steps__card" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="steps__card-number">02</div>
+                    <h3 class="steps__card-title">Récupération</h3>
+                    <p class="steps__card-description">
+                        La récupération est une phase très importante et qui est souvent oubliée par les sportifs débutants ou amateurs.
+                    </p>
+                </div>
+
+                <div class="steps__card" data-aos="fade-up" data-aos-duration="2100">
+                    <div class="steps__card-number">03</div>
+                    <h3 class="steps__card-title">Répétition</h3>
+                    <p class="steps__card-description">
+                        Et oui, finalement la clé de la réussite c'est de s'entraîner très régulièrement, pas de secret!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== PRODUCTS ====================-->
+    <section class="product section container" data-aos="fade-up" data-aos-duration="1200">
+        <h2 class="section__title-center ">
+            Visitez notre partenaire<br> On Running
+        </h2>
+
+        <p class="product__description ">
+            Nous vous avons selectionner quelques produits que nous adorons de chez On.
+        </p>
+
+        <!-- PRODUCT: container-->
+        <div class="product__container grid ">
+            <!-- PRODUCT: article1-->
+            <article class="product__card ">
+                <div class="product__circle "></div>
+
+                <img src="assets/img/product/cloudflyer_waterproof.png " alt=" " class="product__img ">
+
+                <h3 class="product__title ">Cloudflyer</h3>
+                <span class="product__price ">210.00 CHF</span>
+
+                <!-- Lien produit-->
+                <a href="https://www.on-running.com/fr-ch/products/cloud-waterproof/mens/black-lunar ">
+                    <button class="button--flex product__button ">
+                        <i class="ri-shopping-bag-line "></i>
+                    </button>
+                </a>
+
+            </article>
+
+            <!-- PRODUCT: article2-->
+            <article class="product__card ">
+                <div class="product__circle "></div>
+
+                <img src="assets/img/product/cloudx.png " alt=" " class="product__img ">
+
+                <h3 class="product__title ">Cloud X<br> </h3>
+                <span class="product__price ">200.00 CHF</span>
+
+                <!-- Lien produit-->
+                <a href="https://www.on-running.com/fr-ch/products/cloud-x/mens/white-black ">
+                    <button class="button--flex product__button ">
+                        <i class="ri-shopping-bag-line "></i>
+                    </button>
+                </a>
+
+            </article>
+
+            <!-- PRODUCT: article3-->
+            <article class="product__card ">
+                <div class="product__circle "></div>
+
+                <img src="assets/img/product/cloudultra.png " alt=" " class="product__img ">
+
+                <h3 class="product__title ">Cloudultra</h3>
+                <span class="product__price ">240.00 CHF</span>
+
+                <!-- Lien produit-->
+                <a href="https://www.on-running.com/fr-ch/products/cloudultra/mens/limelight-eclipse ">
+                    <button class="button--flex product__button ">
+                        <i class="ri-shopping-bag-line "></i>
+                    </button>
+                </a>
+            </article>
+
+            <!-- PRODUCT: article4-->
+            <article class="product__card ">
+                <div class="product__circle "></div>
+
+                <img src="assets/img/product/cloudstratus.png " alt=" " class="product__img ">
+
+                <h3 class="product__title ">Cloudstratus</h3>
+                <span class="product__price ">240.00 CHF</span>
+
+                <!-- Lien produit-->
+                <a href="https://www.on-running.com/fr-ch/products/cloudstratus/mens/white-black ">
+                    <button class="button--flex product__button ">
+                        <i class="ri-shopping-bag-line "></i>
+                    </button>
+                </a>
+            </article>
+
+            <!-- PRODUCT: article5-->
+            <article class="product__card ">
+                <div class="product__circle "></div>
+
+                <img src="assets/img/product/the_roger_center_court.png " alt=" " class="product__img ">
+
+                <h3 class="product__title ">The Roger</h3>
+                <span class="product__price ">260.00 CHF</span>
+
+                <!-- Lien produit-->
+                <a href="https://www.on-running.com/fr-ch/products/theroger-centre-court/mens/white-gum ">
+                    <button class="button--flex product__button ">
+                        <i class="ri-shopping-bag-line "></i>
+                    </button>
+                </a>
+
+            </article>
+
+            <!-- PRODUCT: article6-->
+            <article class="product__card ">
+                <div class="product__circle "></div>
+
+                <img src="assets/img/product/cloudboom.png " alt=" " class="product__img ">
+
+                <h3 class="product__title ">Cloudboom</h3>
+                <span class="product__price ">330.00 CHF</span>
+
+                <!-- Lien produit-->
+                <a href="https://www.on-running.com/fr-ch/products/cloudboom-echo/womens/black-i-white ">
+                    <button class="button--flex product__button ">
+                        <i class="ri-shopping-bag-line "></i>
+                    </button>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <!--==================== FOOTER: SOCIAL ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__title">Lanee</h3>
+                    <p class="footer__description">Lanee est une offre <br> gratuite, à destinations <br> de tous les sportifs.
+                    </p>
+                    <div>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-discord'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--==================== FOOTER: À PROPOS ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">À propos</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Lanee?</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Fonctionnalités</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">En Savoir Plus</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--==================== FOOTER: COMPAGNIE ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Compagnie</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="members.html" class="footer__link">Équipe</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Notre Masterplan</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Plus de Conseils</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--==================== FOOTER: SUPPORT ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Nous Contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--==================== FOOTER: COPYRIGHT ====================-->
+        <div class="copyrightText">
+            <h4 class="copyright">
+                <div id="versionID"></div>
+            </h4>
+        </div>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/versions.js"></script>
+
+
+    <!--=============== ICON ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+
+    <!--=============== JS TRANSITION ===============-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

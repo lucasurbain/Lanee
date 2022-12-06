@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--=============== META ===============-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!--=============== ICON ===============-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+    <link rel="manifest" href="assets/img/logo/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/logo/favicon/safari-pinned-tab.svg" color="#00c7ff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!--=============== For Safari ===============-->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Lanee">
+    <meta name="og:description" content="Application de parcours sportifs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--=============== LINK CSS ===============-->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sideBar.css">
+    <link rel="stylesheet" href="assets/css/membres.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!--=============== REMIXICONS & BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== FONT ===============-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Membres - Lanee</title>
+
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <a href="index.html" class="logo">Lane<span>e</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="header__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="header__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="carte.html" class="header__link">Map</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="members.html" class="header__link">Équipe</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="conseils.html" class="header__link">Nos conseils</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="header__link">À propos</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <p>Lane</p><span>e</span></a>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Carte</h3>
+
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Accueil</span>
+                        </a>
+
+                        <div class="nav__dropdown">
+                            <a href="carte.html" class="nav__link">
+                                <i class='bx bx-compass nav__icon'></i>
+                                <span class="nav__name">Map</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Support</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link active">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Équipe</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="members.html" class="nav__dropdown-item">Lucas</a>
+                                    <a href="members.html" class="nav__dropdown-item">Pierre-Yves</a>
+                                    <a href="members.html" class="nav__dropdown-item">Achraf</a>
+                                    <a href="members.html" class="nav__dropdown-item">Valentin</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="conseils.html" class="nav__link">
+                            <i class='bx bx-bell nav__icon'></i>
+                            <span class="nav__name">Nos conseils</span>
+                        </a>
+                        <a href="about.html" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon'></i>
+                            <span class="nav__name">À propos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-cog nav__icon'></i>
+                <span class="nav__name">Paramètres</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--==================== BANNER 4 ====================-->
+    <section class="banner4" id="banner4">
+        <div class="content" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Notre équipe</h2>
+        </div>
+    </section>
+
+    <!--==================== MEMBERS ====================-->
+    <section class="card">
+        <!--==================== ANIMATION: CIRCLE ====================-->
+        <div class="card__circle card__circle1"></div>
+        <div class="card__circle card__circle2"></div>
+        <!--==================== MEMBERS: CARDS ====================-->
+        <div class="card__container bd-container">
+            <!--==================== MEMBER: P-Y ====================-->
+            <div class="card__glass">
+                <img src="assets/img/members/cards/Pierre-Yves-500-500.png" alt="" class="card__img">
+                <div class="card__data">
+                    <h3 class="card__title">Pierre-Yves Maucourt</h3>
+                    <div class="card__profession" id="placeholder1">Ui/Ux Design</div>
+                </div>
+                <a href="#" class="card__button">En savoir plus</a>
+            </div>
+            <!--==================== MEMBER: LUCAS ====================-->
+            <div class="card__glass">
+                <img src="assets/img/members/cards/lucas-500-500.png" alt="" class="card__img">
+                <div class="card__data">
+                    <h3 class="card__title">Lucas Urbain</h3>
+                    <div class="card__profession" id="placeholder2">Chef de projet</div>
+                </div>
+                <a href="#" class="card__button">En savoir plus</a>
+            </div>
+            <!--==================== MEMBER: ACHRAF ====================-->
+            <div class="card__glass">
+                <img src="assets/img/members/AQ2.jpg" alt="" class="card__img">
+                <div class="card__data">
+                    <h3 class="card__title">Achraf Qabil</h3>
+                    <div class="card__profession" id="placeholder3">Développeur Java</div>
+                </div>
+                <a href="#" class="card__button">En savoir plus</a>
+            </div>
+            <!--==================== MEMBER: VALENTIN ====================-->
+            <div class="card__glass">
+                <img src="assets/img/members/cards/Valentin-640-640.png" alt="" class="card__img">
+                <div class="card__data">
+                    <h3 class="card__title">Valentin Nix</h3>
+                    <div class="card__profession" id="placeholder4">Développeur Web</div>
+                </div>
+                <a href="#" class="card__button">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <!--==================== FOOTER: SOCIAL ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__title">Lanee</h3>
+                    <p class="footer__description">Lanee est une offre <br> gratuite, à destinations <br> de tous les sportifs.
+                    </p>
+                    <div>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-discord'></i>
+                        </a>
+                    </div>
+                </div>
+                <!--==================== FOOTER: À PROPOS ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">À propos</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Lanee?</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Fonctionnalités</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">En Savoir Plus</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--==================== FOOTER: COMPAGNIE ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Compagnie</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="members.html" class="footer__link">Équipe</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Notre Masterplan</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Plus de Conseils</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--==================== FOOTER: SUPPORT ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Nous Contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--==================== FOOTER: COPYRIGHT ====================-->
+        <div class="copyrightText">
+            <h4 class="copyright">
+                <div id="versionID"></div>
+            </h4>
+        </div>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/versions.js"></script>
+
+    <!--=============== Age auto JS ===============-->
+    <script src="assets/js/placeholder.js"></script>
+
+    <!--=============== ICON ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--=============== JS TRANSITION ===============-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--=============== META ===============-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!--=============== ICON ===============-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+    <link rel="manifest" href="assets/img/logo/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/logo/favicon/safari-pinned-tab.svg" color="#00c7ff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!--=============== For Safari ===============-->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Lanee">
+    <meta name="og:description" content="Application de parcours sportifs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--=============== LINK CSS ===============-->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sideBar.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/aboutAccordion.css">
+    <link rel="stylesheet" href="assets/css/formData.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--=============== REMIXICONS & BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!--=============== FONT ===============-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>À propos - Lanee</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <a href="index.html" class="logo">Lane<span>e</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="header__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="header__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="carte.html" class="header__link">Map</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="members.html" class="header__link">Équipe</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="conseils.html" class="header__link">Nos conseils</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="header__link">À propos</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <p>Lane</p><span>e</span></a>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Carte</h3>
+
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Accueil</span>
+                        </a>
+
+                        <div class="nav__dropdown">
+                            <a href="carte.html" class="nav__link">
+                                <i class='bx bx-compass nav__icon'></i>
+                                <span class="nav__name">Map</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Support</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Équipe</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="members.html" class="nav__dropdown-item">Lucas</a>
+                                    <a href="members.html" class="nav__dropdown-item">Pierre-Yves</a>
+                                    <a href="members.html" class="nav__dropdown-item">Achraf</a>
+                                    <a href="members.html" class="nav__dropdown-item">Valentin</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="conseils.html" class="nav__link">
+                            <i class='bx bx-bell nav__icon'></i>
+                            <span class="nav__name">Nos conseils</span>
+                        </a>
+                        <a href="about.html" class="nav__link active">
+                            <i class='bx bx-bookmark nav__icon'></i>
+                            <span class="nav__name">À propos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-cog nav__icon'></i>
+                <span class="nav__name">Paramètres</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--==================== BANNER 5 ====================-->
+    <section class="banner5" id="banner5">
+        <div class="content" data-aos="fade-up" data-aos-duration="1500">
+            <h2>À propos</h2>
+        </div>
+    </section>
+
+    <!--==================== QUESTIONS ====================-->
+    <section class="questions section" id="faqs">
+        <h2 class="section__title-center questions__title container" data-aos="fade-up" data-aos-duration="1000">
+            Quelques questions qui nous sont<br> régulièrement posées
+        </h2>
+
+        <div class="questions__container container grid" data-aos="fade-up" data-aos-duration="1200">
+            <div class="questions__group">
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Pourquoi Lanee?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Lanee s'inspire du mot anglais "Lane" faisant référence ici à la piste et donc à la course de manière générale. Nous avons ensuite rajouter un deuxième "e" pour pouvoir montrer l'esprit numérique (et aussi parce que le logo était jolie 😄).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Pourquoi avons-nous choisi ce sujet?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Nous avons choisi de créer ce site dans le cadre de nos études informatiques, afin de valider notre semestre.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Quelles sont les causes que nous défendons?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Nous voulons défendre les valeurs sportives et encourager un maximum de personnes à pratiquer une activitée sportive régulière.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="questions__group">
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Quelle est l'origine du projet?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Lanee est issue d'un sujet de projet tuteuré et d'un groupe de 4 étudaints, tous amateurs de sports.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Quel est l'intérêt de Lanee?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            L'idée derrière Lanee, c'est de pouvoir disposer d'un outil en ligne vous permettant d'afficher votre parcours sportif issue d'un outil de capture de données sportives.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Sommes-nous sportifs dans l'équipe?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Oui, Lucas est un grand fan de Triathlon et de plongée, Pierre-Yves lui pratique la course.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section container" id="contact" data-aos="fade-up" data-aos-duration="1000">
+        <div class="contact__container grid">
+            <div class="contact__box">
+                <h2 class="section__title">
+                    (Bêta) Contactez-nous dès <br>aujourd'hui via l'une des <br>informations données
+                </h2>
+
+                <div class="contact__data">
+                    <div class="contact__information">
+                        <h3 class="contact__subtitle">Appelez-nous pour obtenir une assistance</h3>
+                        <span class="contact__description">
+                            <i class="ri-phone-line contact__icon"></i>
+                            +33(0) ...
+                        </span>
+                    </div>
+                    <div class="contact__information">
+                        <h3 class="contact__subtitle">Écrivez-nous par mail</h3>
+                        <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    lucas.urbain7@etu.univ-lorraine.fr
+                                </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Form -->
+            <form class="contact__form" action="https://formsubmit.co/lucas.urbain7@etu.univ-lorraine.fr" method="POST">
+                <div class="contact__inputs">
+                    <div class="contact__content">
+                        <input name="From" type="email" placeholder=" " class="contact__input" required>
+                        <label for="" class="contact__label">Email</label>
+                    </div>
+
+                    <div class="contact__content">
+                        <input name="Sujet" type="text" placeholder=" " class="contact__input" required>
+                        <label for="" class="contact__label">Sujet</label>
+                    </div>
+
+                    <div class="contact__content contact__area">
+                        <textarea type="textarea" name="message" placeholder=" " class="contact__input"></textarea>
+                        <label for="" class="contact__label">Message</label>
+                    </div>
+                </div>
+
+                <button id="btn1" type="submit" class="button button--flex">
+                    
+                            Envoyer un message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                </button>
+
+                <!-- Mail formsubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Lanee - new Email">
+                <input type="hidden" name="_next" value="https://lanee.netlify.app/validation.html#contact">
+            </form>
+        </div>
+    </section>
+
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Lanee</h3>
+                    <p class="footer__description">Lanee est une offre <br> gratuite, à destinations <br> de tous les sportifs.
+                    </p>
+                    <div>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-discord'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">À propos</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Lanee?</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Fonctionnalités</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">En Savoir Plus</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Compagnie</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="members.html" class="footer__link">Équipe</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Notre Masterplan</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Plus de Conseils</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Nous Contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightText">
+            <h4 class="copyright">
+                <div id="versionID"></div>
+            </h4>
+        </div>
+    </footer>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/sweetAlert.js"></script>
+    <script src="assets/js/versions.js"></script>
+
+    <!--=============== Menu JS ===============-->
+    <script src="assets/js/accordion.js"></script>
+
+    <!--=============== ICON ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--=============== JS TRANSITION ===============-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.section__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: var(--mb-2);
+}
+
+
+/*=============== EXPERIENCE ===============*/
+
+.experience {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    min-height: auto;
+}
+
+.experience__container {
+    row-gap: 2.5rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.experience__content {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    justify-items: center;
+    padding: 0 2rem;
+}
+
+.experience__number {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-5);
+}
+
+.experience__description {
+    font-size: var(--small-font-size);
+}
+
+.experience__img {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.experience__img-one,
+.experience__img-two {
+    transition: var(--img-transition);
+}
+
+.experience__img-one:hover,
+.experience__img-two:hover {
+    transform: var(--img-scale);
+}
+
+.experience__overlay {
+    overflow: var(--img-hidden);
+}
+
+.experience__overlay:nth-child(1) {
+    width: 263px;
+    margin-right: 2rem;
+}
+
+.experience__overlay:nth-child(2) {
+    width: 120px;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    margin-top: 30px;
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+
+/* For small devices */
+
+@media screen and (max-width: 340px) {
+    .experience__content {
+        padding: 0;
+    }
+    .experience__overlay:nth-child(1) {
+        width: 190px;
+    }
+    .experience__overlay:nth-child(2) {
+        width: 80px;
+    }
+    .experience__img {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .experience__overlay:nth-child(1) {
+        width: 363px;
+        margin-right: 4rem;
+    }
+    .experience__overlay:nth-child(2) {
+        width: 160px;
+    }
+}
+
+
+/* For large devices */
+
+@media screen and (min-width: 1024px) {
+    .experience__content {
+        margin: var(--mb-1) 0;
+        column-gap: 3.5rem;
+    }
+    .experience__overlay:nth-child(1) {
+        width: 463px;
+        margin-right: 7rem;
+    }
+    .experience__overlay:nth-child(2) {
+        width: 220px;
+        top: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1024px;
+    }
+}

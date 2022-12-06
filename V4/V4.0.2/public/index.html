@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--=============== META ===============-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!--=============== ICON ===============-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+    <link rel="manifest" href="assets/img/logo/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/logo/favicon/safari-pinned-tab.svg" color="#00c7ff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!--=============== For Safari ===============-->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Lanee">
+    <meta name="og:description" content="Application de parcours sportifs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--=============== LINK CSS ===============-->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sideBar.css">
+    <link rel="stylesheet" href="assets/css/team.css">
+    <link rel="stylesheet" href="assets/css/discover.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+
+    <!--=============== REMIXICONS & BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== FONT ===============-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS Styles ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+    <title>Accueil - Lanee</title>
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <a href="index.html" class="logo">Lane<span>e</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="header__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="header__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="carte.html" class="header__link">Map</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="members.html" class="header__link">Équipe</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="conseils.html" class="header__link">Nos conseils</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="header__link">À propos</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <p>Lane</p><span>e</span></a>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Carte</h3>
+
+                        <a href="index.html" class="nav__link active">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Accueil</span>
+                        </a>
+
+                        <div class="nav__dropdown">
+                            <a href="carte.html" class="nav__link">
+                                <i class='bx bx-compass nav__icon'></i>
+                                <span class="nav__name">Map</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Support</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Équipe</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="members.html" class="nav__dropdown-item">Lucas</a>
+                                    <a href="members.html" class="nav__dropdown-item">Pierre-Yves</a>
+                                    <a href="members.html" class="nav__dropdown-item">Achraf</a>
+                                    <a href="members.html" class="nav__dropdown-item">Valentin</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="conseils.html" class="nav__link">
+                            <i class='bx bx-bell nav__icon'></i>
+                            <span class="nav__name">Nos conseils</span>
+                        </a>
+                        <a href="about.html" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon'></i>
+                            <span class="nav__name">À propos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-cog nav__icon'></i>
+                <span class="nav__name">Paramètres</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--==================== BANNER ====================-->
+    <section class="banner" id="banner">
+        <div class="content" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Étapes</h2>
+            <a class="btn" href="carte.html">Voir les parcours</a>
+            <p class="cursor"><i class='bx bxs-chevron-up bx-md'></i></p>
+        </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class=about id="about">
+        <div class="contentBx" data-aos="fade-up" data-aos-duration="1200">
+            <h2 class="titleText">Qui sommes-nous ?</h2>
+            <p class="text">Nous sommes une équipe de quatres étudiants. Nous avons développé une solution qui vous permet d'afficher une map dynamique sur notre site.</p>
+            <a href="members.html" class="btn">En savoir plus</a>
+        </div>
+        <div class="imgBx" data-aos="fade-up" data-aos-duration="1500">
+            <img src="assets/img/banners/bike.jpg" class="fitBg">
+        </div>
+    </section>
+
+    <!--==================== BANNER 2 ====================-->
+    <section class="banner2">
+        <img src="assets/img/banners/hiking-man-mountains.jpg" class="fitBg">
+    </section>
+
+    <!--==================== TEAMS CARDS ====================-->
+    <section class="team" id="team">
+        <div class="content" data-aos="fade-up" data-aos-duration="500">
+            <h2 class="titleText">Notre équipe</h2>
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/members/PY.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Pierre-Yves</h2>
+                                <span class="discover__description">Développeur Java</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/members/LU2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Lucas</h2>
+                                <span class="discover__description">Chef de projet</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/members/Valentin.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Valentin</h2>
+                                <span class="discover__description">Développeur</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/members/AQ.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Achraf</h2>
+                                <span class="discover__description">Développeur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!--==================== BANNER 3 ====================-->
+    <section class="banner3">
+        <img src="assets/img/banners/man-black.jpg" class="fitBg">
+    </section>
+
+    <!--==================== OUR MISSION ====================-->
+    <section class="team" id="team">
+        <div class="content">
+            <h2 class="titleText">Notre mission</h2>
+            <p class="text">La mission de Lanee est de développer le sport dans le Monde, vous retrouverez une rubrique vous permettant d'afficher vos parcours et les conseils de nos Athlètes partenaires! <br><br>Ce site est 100% gratuit et ne collecte aucune donnée
+                de ces utilisateurs.</p>
+        </div>
+        <!--========== SERVICES ==========-->
+
+        <div class="sectionImgServices" data-aos="fade-up" data-aos-duration="2000">
+            <!-- .bd-container-->
+            <div class="services__container bd-grid">
+                <!--========== 1 ==========-->
+                <div class="services__content">
+                    <img src="assets/img/logo/growth.png" width="100" height="200" alt="" class="services_img">
+                    <h3 class="services__title">Développement</h3>
+                    <p class="services__description">Nous voulons développer le sport dans le monde Entier et favoriser l'entraînement des sportifs.</p>
+                </div>
+                <!--========== 2 ==========-->
+                <div class="services__content">
+                    <img src="assets/img/logo/idea.png" width="100" height="200" alt="" class="services_img">
+                    <h3 class="services__title">Conseils</h3>
+                    <p class="services__description">Lanee propose à tous de voir le conseil de Pro, et les astuces recensé par son équipe.</p>
+                </div>
+                <!--========== 3 ==========-->
+                <div class="services__content">
+                    <img src="assets/img/logo/motivation.png" width="100" height="200" alt="" class="services_img">
+                    <h3 class="services__title">Motivation</h3>
+                    <p class="services__description">Chez Lanee, notre objectif est de vous motivez dans la pratique de discipline sportive.</p>
+                </div>
+                <!--========== 4 ==========-->
+                <div class="services__content">
+                    <img src="assets/img/logo/padlock.png" width="100" height="200" alt="" class="services_img">
+                    <h3 class="services__title">Protection</h3>
+                    <p class="services__description">Lanee n'utilise aucune de vos données, du début de la connexion, jusqu'à la fin de son utilisation.</p>
+                </div>
+                <!--========== 5 ==========-->
+                <div class="services__content">
+                    <img src="assets/img/logo/shared-folder.png" width="100" height="200" alt="" class="services_img">
+                    <h3 class="services__title">Partage</h3>
+                    <p class="services__description">Grâce aux conseils de nos Athlètes partenaire, découvrez les meilleurs conseisl selon votre discipline.</p>
+                </div>
+                <!--========== 6 ==========-->
+                <div class="services__content">
+                    <img src="assets/img/logo/free.png" width="100" height="200" alt="" class="services_img">
+                    <h3 class="services__title">100% gratuit</h3>
+                    <p class="services__description">Lanee est libre d'accès à tous, nous sommes là pour simplifier l'analyse de donnée sportive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <!--==================== FOOTER: SOCIAL ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__title">Lanee</h3>
+                    <p class="footer__description">Lanee est une offre <br> gratuite, à destinations <br> de tous les sportifs.
+                    </p>
+                    <div>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-discord'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--==================== FOOTER: À PROPOS ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">À propos</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Lanee?</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Fonctionnalités</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">En Savoir Plus</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--==================== FOOTER: COMPAGNIE ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Compagnie</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="members.html" class="footer__link">Équipe</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Notre Masterplan</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Plus de Conseils</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--==================== FOOTER: SUPPORT ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Nous Contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--==================== FOOTER: COPYRIGHT ====================-->
+        <div class="copyrightText">
+            <h4 class="copyright">
+                <div id="versionID"></div>
+            </h4>
+        </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/versions.js"></script>
+
+    <!--=============== JS transition ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

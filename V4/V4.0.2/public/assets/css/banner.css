@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banners/font-menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner .content h2 {
+    font-size: 7em;
+    color: #FFF;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+}
+
+.banner2 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner2:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background: linear-gradient(to top, #000, transparent);
+}
+
+.banner2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, var(--first-color-lighten), transparent);
+}
+
+.banner3 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner3:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background: linear-gradient(to top, #000, transparent);
+}
+
+.banner3:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000, transparent);
+}
+
+.banner3 {
+    background: #000;
+}
+
+.banner4 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banners/plante.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner4 .content {
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner4 .content h2 {
+    font-size: 7em;
+    color: #FFF;
+}
+
+.banner4:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+}
+
+.banner5 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banners/rocks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner5 .content {
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner5 .content h2 {
+    font-size: 7em;
+    color: #FFF;
+}
+
+.banner5:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+}
+
+.banner6 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banners/w-mountains.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner6 .content {
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner6 .content h2 {
+    font-size: 7em;
+    color: #FFF;
+}
+
+.banner6:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+}
+
+@media only screen and (max-width: 860px) {
+    .banner .content h2,
+    .banner4 .content h2,
+    .banner5 .content h2,
+    .banner6 .content h2 {
+        font-size: 5em;
+    }
+}

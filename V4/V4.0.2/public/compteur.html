@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--=============== META ===============-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!--=============== ICON ===============-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+    <link rel="manifest" href="assets/img/logo/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/logo/favicon/safari-pinned-tab.svg" color="#00c7ff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!--=============== For Safari ===============-->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Lanee">
+    <meta name="og:description" content="Application de parcours sportifs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--=============== LINK CSS ===============-->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sideBar.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+    <!--=============== REMIXICONS & BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== FONT ===============-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS Styles ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Compteur - Lanee</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <a href="index.html" class="logo">Lane<span>e</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="header__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="header__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="carte.html" class="header__link">Map</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="members.html" class="header__link">Équipe</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="conseils.html" class="header__link">Nos conseils</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="header__link">À propos</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <p>Lane</p><span>e</span></a>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Carte</h3>
+
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Accueil</span>
+                        </a>
+
+                        <div class="nav__dropdown">
+                            <a href="carte.html" class="nav__link active">
+                                <i class='bx bx-compass nav__icon'></i>
+                                <span class="nav__name">Map</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Support</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Équipe</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="members.html" class="nav__dropdown-item">Lucas</a>
+                                    <a href="members.html" class="nav__dropdown-item">Pierre-Yves</a>
+                                    <a href="members.html" class="nav__dropdown-item">Achraf</a>
+                                    <a href="members.html" class="nav__dropdown-item">Valentin</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="conseils.html" class="nav__link">
+                            <i class='bx bx-bell nav__icon'></i>
+                            <span class="nav__name">Nos conseils</span>
+                        </a>
+                        <a href="about.html" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon'></i>
+                            <span class="nav__name">À propos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-cog nav__icon'></i>
+                <span class="nav__name">Paramètres</span>
+            </a>
+        </nav>
+    </div>
+
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <style>
+        #map {
+            position: absolute;
+            right: 100px;
+            bottom: 45%;
+            width: 40%;
+            height: 40%;
+            border: none;
+        }
+    </style>
+
+    <div id="map"></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXM2ODg4IiwiYSI6ImNrd2t1bjFobjF2enkycHBtYjNhZXlxcm0ifQ.GPyaPQ3VWke4nJGliDW2OA';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+            center: [6.388550, 48.136165],
+            zoom: 8,
+        });
+
+        // Initialize the GeolocateControl.
+        const geolocate = new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            trackUserLocation: true
+        });
+        // Add the control to the map.
+        map.addControl(geolocate, 'bottom-right');
+        // Set an event listener that fires
+        // when a trackuserlocationstart event occurs.
+        geolocate.on('trackuserlocationstart', () => {
+            console.log('A trackuserlocationstart event has occurred.');
+        });
+
+        const nav = new mapboxgl.NavigationControl({
+            visualizePitch: true
+        });
+        map.addControl(nav, 'bottom-right');
+    </script>
+
+
+    <div class="tripmeter">
+        <h5>Résumé du parcours :</h5>
+        <ul class="fa-ul">
+            <!-- distance totale -->
+            <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span>
+                <p>
+                    Distance :
+                    <span id="startDistance"> 0 Km</span>
+                </p>
+            </li>
+            <!-- Timer -->
+            <li><span class="fa-li"><i class="far fa-hourglass"></i></span>
+                <p>
+                    Durée :
+                    <span id="chronotime">0:00:00:00</span>
+                </p>
+            </li>
+            <!-- Heure du départ -->
+            <li><span class="fa-li"><i class="fas fa-clock"></i></span>
+                <p>
+                    Heure de départ :
+                    <span id="startHeureD"><span>
+                </p>
+            </li>
+            <!-- Heure d'arrivée -->
+            <li><span class="fa-li"><i class="far fa-clock"></i></span>
+                    <p>
+                        Heure d'arrivée :
+                        <span id="startHeureA"> </span>
+                    </p>
+            </li>
+            <!-- Vitesse moyenne calculée à la fin du parcours -->
+            <li><span class="fa-li"><i class="fas fa-tachometer-alt"></i></span>
+                <p>
+                    Vitesse moyenne :
+                    <span id="MoyenneVitesse"> </span>
+                </p>
+            </li>
+            <!-- Position actualisée toutes les 5 secondes -->
+            <li><span class="fa-li"><i class="fas fa-map-marked-alt"></i></span>
+                <p>
+                    Position : </br>
+                    <span id="Pos"></span>
+                </p>
+            </li>
+
+        </ul>
+        <!-- Bouton qui lance la course ou l'arrête ! -->
+        <div class="chronoForm">
+            <form name="chronoForm">
+                <input id="button" type="button" name="startstop" class='formatForButtonStart' value="Start" onClick="chronoStart();" />
+            </form>
+        </div>
+
+
+
+    </div>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <!--==================== FOOTER: SOCIAL ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__title">Lanee</h3>
+                    <p class="footer__description">Lanee est une offre <br> gratuite, à destinations <br> de tous les sportifs.
+                    </p>
+                    <div>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social">
+                            <i class='bx bxl-discord'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--==================== FOOTER: À PROPOS ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">À propos</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Lanee?</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Fonctionnalités</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">En Savoir Plus</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--==================== FOOTER: COMPAGNIE ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Compagnie</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="members.html" class="footer__link">Équipe</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Notre Masterplan</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="conseils.html" class="footer__link">Plus de Conseils</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--==================== FOOTER: SUPPORT ====================-->
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">Nous Contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--==================== FOOTER: COPYRIGHT ====================-->
+        <div class="copyrightText">
+            <h4 class="copyright">
+                <div id="versionID"></div>
+            </h4>
+        </div>
+    </footer>
+
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    // si la fct fonctionne
+                    showPosition,
+                    // si la fct échoue
+                    null, {
+                        enableHighAccuracy: true,
+                        timeout: 5000,
+                        maximumAge: 0
+                    });
+            } else {
+                Pos.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        // Affiche position actuelle
+        function showPosition(position) {
+            Pos.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+            lat1 = position.coords.latitude;
+            lon1 = position.coords.longitude;
+            calculateDistance(48.2891894, 6.9427557, 48.2800584, 6.9555895); // Pour le test sinon mettre lat1, lon1, lat2, lon2 
+            //calculateDistance(lat1, lon1, lat2, lon2);
+            lat2 = lat1;
+            lon2 = lon1;
+        }
+
+        // Algorithme qui permet de calculer la distance
+
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            var R = 6371; // Radius of the earth in km
+            var dLat = deg2rad(lat2 - lat1); // deg2rad below
+            var dLon = deg2rad(lon2 - lon1);
+            var a =
+                Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
+                Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            var distance = R * c; // Distance in km
+            return distance;
+        }
+
+        function deg2rad(deg) {
+            return deg * (Math.PI / 180)
+        }
+
+        // Refresh heure
+        function refresh() {
+            var t = 1000; // rafraîchissement en millisecondes
+            setTimeout('showDate()', t)
+        }
+
+        // Montrer heure
+        function showDate(id) {
+            var date = new Date()
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+
+            if (h < 10) {
+                h = '0' + h;
+            }
+            if (m < 10) {
+                m = '0' + m;
+            }
+            if (s < 10) {
+                s = '0' + s;
+            }
+            var time = h + ':' + m + ':' + s
+                // id = 1 Affiche l'heure de départ sinon  id = 2 pour l'heure d'arrivée
+            if (id == "1") {
+                document.getElementById('startHeureD').innerHTML = time;
+            } else if (id == "2") {
+                document.getElementById('startHeureA').innerHTML = time;
+            }
+        }
+
+        var startTime = 0;
+        var start = 0;
+        var end = 0;
+        var diff = 0;
+        var timerID = 0;
+
+        // Fct principale qui gère le chrono
+        function chrono() {
+            end = new Date()
+            diff = end - start
+            diff = new Date(diff)
+            var msec = diff.getMilliseconds()
+            var sec = diff.getSeconds()
+            var min = diff.getMinutes()
+            var hr = diff.getHours() - 1
+            if (min < 10) {
+                min = "0" + min
+            }
+            if (sec < 10) {
+                sec = "0" + sec
+            }
+            if (msec < 10) {
+                msec = "00" + msec
+            } else if (msec < 100) {
+                msec = "0" + msec
+            }
+            document.getElementById("chronotime").innerHTML = hr + ":" + min + ":" + sec + ":" + msec
+            timerID = setTimeout("chrono()", 10)
+            return sec * 3600 + min * 60 + hr;
+
+        }
+
+        var Chrono = new Boolean("false");
+
+        // Lance le chrono
+        async function chronoStart() {
+
+            showDate(1); // pour afficher l'heure de départ
+            Chrono = true; // Variable pour dire que le chrono tourne
+            chrono()
+            start = new Date()
+            document.chronoForm.startstop.value = "Stop"
+            document.chronoForm.startstop.className = 'formatForButtonStop';
+            document.chronoForm.startstop.onclick = chronoStop
+            while (Chrono == true) { // boucle toutes les 5 secondes
+                getLocation();
+                var wpid = navigator.geolocation.watchPosition(geo_success, geo_error, geo_options);
+                str = document.getElementById('startDistance').innerHTML;
+                str = str.substr(1, 4);
+                str = parseFloat(str);
+                console.log(str + " str");
+                //startVitesse.innerHTML = parseInt((str * 5) * 3600) + "Km/H";
+                await delay(5);
+            }
+        }
+
+        function delay(n) {
+            return new Promise(function(resolve) {
+                setTimeout(resolve, n * 1000);
+            });
+        }
+
+        // Arreter le chrono
+        function chronoStop() {
+            showDate(2);
+            Chrono = false;
+            MoyenneVitesse.innerHTML = VitesseMoyenne(); // "Km/H"
+            document.chronoForm.startstop.value = "Start"
+            document.chronoForm.startstop.className = 'formatForButtonStart';
+            document.chronoForm.startstop.onclick = chronoStart;
+            clearTimeout(timerID)
+            navigator.geolocation.clearWatch(wpid);
+        }
+
+        // Calculer la vitesse moyenne du parcours
+        function VitesseMoyenne() {
+            var temps = document.getElementById('chronotime').innerHTML
+            const valeur1 = temps.split(':');
+            temps = (parseFloat(valeur1[0]) + parseFloat(valeur1[1] / 60) + parseFloat(valeur1[2] / 3600));
+            var dist = document.getElementById('startDistance').innerHTML
+            const valeur2 = dist.split('');
+            //Pour le test car on arrive pas à faire marcher la distance
+
+            distance = 0.0200;
+            console.log(distance + " distance");
+            console.log(temps + " temps");
+            //valeur temporaire de la vmoyenne:
+            return (distance / temps) + " Km/H";
+        }
+
+        function geo_success(position) {
+            Pos.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+            lat1 = position.coords.latitude;
+            lon1 = position.coords.longitude;
+            calculateDistance(48.28995401425752, 6.942579023047614, 48.28239772782458, 6.9485903814288195); // Pour le test nous avons mit des coordonées déjà existantes : IUT de Saint-Dié des vosges à la gare de Saint-Dié des vosges 
+            //calculateDistance(lat1, lon1, lat2, lon2); // Voici le code en condition reel
+            lat1 = lat2;
+            lon1 = lon2;
+        }
+
+        function geo_error() {
+            console.log("Erreur");
+        }
+
+        var geo_options = {
+            enableHighAccuracy: true,
+            maximumAge: 30000,
+            timeout: 27000
+        };
+    </script>
+
+    <style>
+        .tripmeter {
+            min-height: 645px;
+            padding: 100px;
+            padding-top: 150px;
+            display: block;
+        }
+        
+        h5 {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+        
+        .chronoForm {
+            padding-top: 20px;
+        }
+        
+        .formatForButtonStart,
+        .formatForButtonStop {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-weight: var(--font-semi-bold);
+            font-size: var(--normal-font-size);
+            display: inline-block;
+            background-color: var(--first-color);
+            color: #FFF;
+            padding: 1rem 1.75rem;
+            border-radius: .5rem;
+            font-weight: var(--font-medium);
+            transition: .3s;
+        }
+        
+        .formatForButtonStart:hover,
+        .formatForButtonStop:hover {
+            background-color: var(--first-color-alt);
+        }
+    </style>
+
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/versions.js"></script>
+
+    <!--=============== ICON ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!--=============== JS TRANSITION ===============-->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
